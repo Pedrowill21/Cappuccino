@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+
+.app{
+
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  width: 100vw;
+  
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  text-transform: uppercase;
+}

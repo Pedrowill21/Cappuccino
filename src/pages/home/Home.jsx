@@ -1,0 +1,56 @@
+import styles from "./Home.module.css"
+
+const Home = () => {
+  return (
+    <div className={styles.home}>
+      <div className={styles.introduction}>
+        <div className={styles.box}>
+            <div className={styles.box_left}>
+            <div className={styles.text}>
+              <h1>Cappuccino <br /> Seu Café Favorito</h1>
+            </div>
+            <div className={styles.box_btn}>
+              <button>View Menu</button>
+            </div>
+           <div className={styles.box_icons}>
+            <div className={styles.icon}><img src="../../public/cup.png"/></div>
+            <div className={styles.icon}><img src="../../public/maquina-coffe.png"/></div>
+            <div className={styles.icon}><img src="../../public/shop.png"/></div>
+            <div className={styles.icon}><img src="../../public/terraco.png"/></div>
+           </div>
+            </div>
+        </div>
+        <div className={styles.box_img}>
+            <img src="../../public/Cappuccino.png" alt="cafe" />
+        </div>
+      </div>
+
+      <div className={styles.showroom}>
+        <div className={styles.card}>
+          <h2>O Segredo</h2>
+          <div>
+          <img src="../../public/grao2.jpg" />
+          </div>
+          <span>No Café Cappuccino, estamos comprometidos em oferecer uma experiência de café verdadeiramente extraordinária. Nossa busca incessante pela excelência começa com a seleção cuidadosa dos grãos que usamos em nossas bebidas. Aqui está o que torna os nossos grãos tão especiais e por que o nosso café é considerado o melhor da cidade</span>
+        </div>
+        <div className={styles.card}>
+          <h2>Origem Premium</h2>
+          <div>
+          <img src="../../public/grao3.jpg"  />
+          </div>
+          <span>Utilizamos apenas grãos de café de origens premium. Trabalhamos em parceria com fazendas e cooperativas ao redor do mundo para garantir a qualidade excepcional de nossos grãos. Cada xícara de Café Celestial é uma viagem sensorial que o levará às paisagens remotas de regiões produtoras de café de renome.</span>
+        </div>
+        <div className={styles.card}>
+          <h2>Torra Artesanal</h2>
+          <div>
+          <img src="../../public/grao1.jpg"  />
+          </div>
+          <span>A torrefação é uma arte que levamos a sério. Nossos mestres torrefadores dominam a ciência e a arte da torrefação para realçar o sabor e o aroma naturais dos grãos. Cada lote é torrado com precisão para obter o perfil de sabor perfeito.</span>
+        </div>
+      </div>
+
+    </div>
+  )
+}
+
+export default Home
