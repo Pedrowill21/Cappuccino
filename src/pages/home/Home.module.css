@@ -1,6 +1,8 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
 .home{
@@ -74,47 +76,55 @@
 
 .card{
     background-color: rgba(255, 217, 170, 0.616);
-    padding: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    box-shadow: 1px 1px 20px black;
+    box-shadow: 1px 1px 20px rgb(139, 139, 139);
     width:320px;
+    height: 320px;
     min-width: 320px;
-
+    transition: .5s;
     margin: 20px;
 }
 
+.card:hover{
+    transform: scale(1.1);
+}
+
+.container_img{
+    width: 100%;
+    height: 60%;
+}
+
+.container_img img{
+   width: 100%;
+   
+   
+}
+
+.container_text{
+    width: 100%;
+    height: 40%;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.container_text h2{
+   font-size: 1em;
+}
 .text{
     text-align: center;
 }
 
-.card h2{
-    margin: 0;
-    font-size: 1.8rem;
-    text-align: center;
-}
 
-.card span{
-    text-align: center;
-    font-size: 1.5rem;
-}
 
-.card div{
-    width: 100%;
-    height: 220px;
-    margin-bottom: 25px;
-}
-
-.card img{
-    width: 100%;
-    margin: 10px 0;
-    border-radius: 10px;
-    height: 100%;
-   
-}
 
 @media (max-width:1024px){
     .box_img img {
