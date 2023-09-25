@@ -1,4 +1,6 @@
+import Card from "../../components/Card"
 import styles from "./Home.module.css"
+import data from "../../data/data"
 
 const Home = () => {
   return (
@@ -26,63 +28,20 @@ const Home = () => {
       </div>
 
       <div className={styles.showroom}>
-        
-      <div className={styles.card}>
-          <div className={styles.container_img}>
-          <img src="../../public/grao1.jpg"  />
-          </div>
-          <div className={styles.container_text}>
-          <h2>O Segredo</h2>
-          <span>No Café Cappuccino, estamos comprometidos em oferecer uma experiência de café verdadeiramente extraordinária. Nossa busca incessante pela excelência começa com a seleção cuidadosa dos grãos que usamos em nossas bebidas.</span>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.container_img}>
-          <img src="../../public/grao3.jpg"  />
-          </div>
-          <div className={styles.container_text}>
-          <h2>Origem Premium</h2>
-          <span>Utilizamos apenas grãos de café de origens premium. Trabalhamos em parceria com fazendas e cooperativas ao redor do mundo para garantir a qualidade excepcional de nossos grãos. Cada xícara de Café Celestial é uma viagem sensorial que o levará às paisagens remotas de regiões produtoras de café de renome.</span>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.container_img}>
-          <img src="../../public/grao1.jpg"  />
-          </div >
-          <div  className={styles.container_text}>
-          <h2>Torra Artesanal</h2>
-          <span>A torrefação é uma arte que levamos a sério. Nossos mestres torrefadores dominam a ciência e a arte da torrefação para realçar o sabor e o aroma naturais dos grãos. Cada lote é torrado com precisão para obter o perfil de sabor perfeito.</span>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.container_img}>
-          <img src="../../public/grao1.jpg"  />
-          </div>
-          <div className={styles.container_text}>
-          <h2>O Segredo</h2>
-          <span>No Café Cappuccino, estamos comprometidos em oferecer uma experiência de café verdadeiramente extraordinária. Nossa busca incessante pela excelência começa com a seleção cuidadosa dos grãos que usamos em nossas bebidas.</span>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.container_img}>
-          <img src="../../public/grao3.jpg"  />
-          </div>
-          <div className={styles.container_text}>
-          <h2>Origem Premium</h2>
-          <span>Utilizamos apenas grãos de café de origens premium. Trabalhamos em parceria com fazendas e cooperativas ao redor do mundo para garantir a qualidade excepcional de nossos grãos. Cada xícara de Café Celestial é uma viagem sensorial que o levará às paisagens remotas de regiões produtoras de café de renome.</span>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <div className={styles.container_img}>
-          <img src="../../public/grao1.jpg"  />
-          </div >
-          <div  className={styles.container_text}>
-          <h2>Torra Artesanal</h2>
-          <span>A torrefação é uma arte que levamos a sério. Nossos mestres torrefadores dominam a ciência e a arte da torrefação para realçar o sabor e o aroma naturais dos grãos. Cada lote é torrado com precisão para obter o perfil de sabor perfeito.</span>
-          </div>
-        </div>
-        
-      </div>
+       
+          {
+            data.map((info)=>{
+              return (
+                <Card
+                url={info.url}
+                title={info.title}
+                description={info.description}
+              />
+              )
+            })
+          }
+
+    </div>
 
     </div>
   )

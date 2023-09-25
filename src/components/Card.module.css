@@ -1,0 +1,22 @@
+ .card_container{
+     width: 300px;     
+     overflow: hidden;
+     margin: 10px;
+     transition: 0.4s;
+     box-shadow: 0px 0px 10px  #777777;
+
+ }
+
+ .card_container:hover{
+    transform: scale(1.1);
+ }
+
+ .img_container img{
+     height: 200px;
+     overflow: hidden;
+ }
+
+ .content{
+    padding: 10px;
+    text-align: center;
+ }
