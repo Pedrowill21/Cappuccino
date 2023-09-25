@@ -33,6 +33,7 @@ const Home = () => {
             data.map((info)=>{
               return (
                 <Card
+                key={info.id}
                 url={info.url}
                 title={info.title}
                 description={info.description}

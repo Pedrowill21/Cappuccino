@@ -22,61 +22,28 @@
 }
 
 .products{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%; 
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 10px;
+
+    
 }
 
 .destaque{
     width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin: 20px;
-    background-color: rgb(230, 243, 255);
-        
-}
-.card{
-    
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: none;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 2px 1px 7px rgb(124, 124, 124);
-    transition: 0.4s;
+    align-items:center ;
+    padding: 5px;    
+    margin: 10px 0;
+ }
 
-}
+ .green{
+    background-color: rgb(204, 255, 146); 
+ }
 
-.card:hover{
-    transform: scale(1.1);
 
-}
 
-.media{
-    width: 100%;
-    height: 70%;
-    padding: 15px;
-   
-}
-
-.media img{
-    width: 100%;
-}
-
-.info{
-    border: 2px solid rgb(0, 0, 0);
-    width: 100%;
-    height: 30%;
-    text-align: center;
-}

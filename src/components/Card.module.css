@@ -4,11 +4,18 @@
      margin: 10px;
      transition: 0.4s;
      box-shadow: 0px 0px 10px  #777777;
+     flex: none;
+     background-color:#fff;
+     
 
  }
 
  .card_container:hover{
     transform: scale(1.1);
+ }
+
+ .img_container{
+    display: flex;
  }
 
  .img_container img{

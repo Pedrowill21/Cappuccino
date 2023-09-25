@@ -1,11 +1,15 @@
 import styles from "./Products.module.css"
 import coffe from "../../data/seed"
+import coffeMethods from "../../data/coffeePreparationMethods"
+import promotion from "../../data/promotion"
 import { useState } from "react"
 import Card from "../../components/Card"
 
 
 const Products = () => {
-  const [data,setData] = useState(coffe)
+  const [seed, setSeed] = useState(coffe)
+  const [bestsellers, setBestSellers] = useState(coffeMethods)
+  const [offers,setOffers] = useState(promotion)
 
   return (
 
@@ -19,19 +23,46 @@ const Products = () => {
       <p>Vindas de cinco das melhores terras cafeicultoras do planeta, CAPPUCCINO® Farmers Origins chegaram para ampliar horizontes em seus sentidos.</p>
     </div>
 
-    <div className={styles.destaque}>
+    <div className={`${styles.destaque}`}>
         <h2>Destaque</h2>
         <div className={styles.products}>
-           {data.map((product)=>{
+           {seed.map((product)=>{
                 return (
-                  <div className={styles.card} key={product.id}>
-                     <div className={styles.media}>
-                     <img src={product.img}/>
-                        </div>
-                        <div className={styles.info}>
-                        <h2>{product.title}</h2>
-                     </div>
-                  </div>
+                  <Card
+                  key={product.id}
+                  url={product.img}
+                  title={product.title}
+                  />
+                )})}
+        </div>
+    </div>
+
+    <div className={styles.destaque}>
+        <h2>Mais vendidos</h2>
+        <div className={styles.products}>
+           {bestsellers.map((product)=>{
+                return (
+                  <Card
+                  key={product.id}
+                  url={product.img}
+                  title={product.title}
+                  description={product.description}
+                  />
+                )})}
+        </div>
+    </div>
+
+    <div className={styles.destaque}>
+        <h2>Promoção</h2>
+        <div className={styles.products}>
+           {offers.map((product)=>{
+                return (
+                  <Card
+                  key={product.id}
+                  url={product.img}
+                  title={product.title}
+                  description={product.description}
+                  />
                 )})}
         </div>
     </div>
