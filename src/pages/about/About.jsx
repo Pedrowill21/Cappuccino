@@ -5,5 +5,4 @@ const About = () => {
     <div>Em desenvolvimento...</div>
   )
 }
-
 export default About

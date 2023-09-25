@@ -9,7 +9,7 @@ const Footer = () => {
         <ul>
           <li>Endereço: Rua das Aromas, 123 - Centro, Cidade</li>
           <li>Telefone: (123) 456-7890</li>
-          <li>E-mail: contato@cafecelstial.com</li>
+          <li>E-mail: contato@Cappuccino.com</li>
         </ul>
       </div>
       <div className={styles.col}>

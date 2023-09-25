@@ -15,40 +15,37 @@ const coffe = [
         img:"https://www.nescafe.com/br/farmersorigins/sites/default/files/styles/538x336/public/2023-02/OK_3Americas.png?itok=yUt4ak8N"
     },
     {
-        id:4,
-        title:"India",
-        img:"https://www.nescafe.com/br/farmersorigins/sites/default/files/styles/538x336/public/2023-02/OK_India.png?itok=OMERy5CE"
-    },
-    {
-        id:5,
-        title:"Africas",
-        img:"https://www.nescafe.com/br/farmersorigins/sites/default/files/styles/538x336/public/2023-02/OK_Africas.png?itok=shE731Wy"
-    },
-    {
-        id: 6,
+        id: 4,
         title: "Colombia",
         img:"https://www.nescafe.com/br/farmersorigins/sites/default/files/styles/538x336/public/2023-02/OK_Colombia.png?itok=DNCcVZj7"
     },
     {
-        id:7,
+        id:5,
         title:"Brasil",
         img:"https://www.nescafe.com/br/farmersorigins/sites/default/files/styles/538x336/public/2023-02/OK_Brazil.png?itok=oV3iWO-l"
     },
     {
-        id:8,
+        id:6,
         title:"Americas",
         img:"https://www.nescafe.com/br/farmersorigins/sites/default/files/styles/538x336/public/2023-02/OK_3Americas.png?itok=yUt4ak8N"
     },
     {
-        id:9,
-        title:"India",
-        img:"https://www.nescafe.com/br/farmersorigins/sites/default/files/styles/538x336/public/2023-02/OK_India.png?itok=OMERy5CE"
+        id: 7,
+        title: "Colombia",
+        img:"https://www.nescafe.com/br/farmersorigins/sites/default/files/styles/538x336/public/2023-02/OK_Colombia.png?itok=DNCcVZj7"
     },
     {
-        id:10,
-        title:"Africas",
-        img:"https://www.nescafe.com/br/farmersorigins/sites/default/files/styles/538x336/public/2023-02/OK_Africas.png?itok=shE731Wy"
+        id:8,
+        title:"Brasil",
+        img:"https://www.nescafe.com/br/farmersorigins/sites/default/files/styles/538x336/public/2023-02/OK_Brazil.png?itok=oV3iWO-l"
     },
+    {
+        id:9,
+        title:"Americas",
+        img:"https://www.nescafe.com/br/farmersorigins/sites/default/files/styles/538x336/public/2023-02/OK_3Americas.png?itok=yUt4ak8N"
+    },
+    
+    
 ];
 
 export default coffe;

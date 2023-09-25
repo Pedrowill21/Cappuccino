@@ -13,6 +13,10 @@ const Products = () => {
       <p>Vindas de cinco das melhores terras cafeicultoras do planeta, CAPPUCCINO® Farmers Origins chegaram para ampliar horizontes em seus sentidos.</p>
     </div>
 
+    <div className={styles.destaque}>
+
+    </div>
+
     <div className={styles.products}>
       {data.map((product)=>{
         return (
