@@ -14,52 +14,54 @@ const Products = () => {
     </div>
 
     <div className={styles.destaque}>
-
+        <h2>Destaque</h2>
+        <div className={styles.products}>
+           {data.map((product)=>{
+                return (
+                  <div className={styles.card} key={product.id}>
+                     <div className={styles.media}>
+                     <img src={product.img}/>
+                        </div>
+                        <div className={styles.info}>
+                        <h2>{product.title}</h2>
+                     </div>
+                  </div>
+                )})}
+        </div>
     </div>
 
-    <div className={styles.products}>
-      {data.map((product)=>{
-        return (
-          <div className={styles.card} key={product.id}>
-        <div className={styles.media}>
-          <img src={product.img}/>
+    <div className={styles.destaque}>
+        <h2>Mais vendidos</h2>
+        <div className={styles.products}>
+           {data.map((product)=>{
+                return (
+                  <div className={styles.card} key={product.id}>
+                     <div className={styles.media}>
+                     <img src={product.img}/>
+                        </div>
+                        <div className={styles.info}>
+                        <h2>{product.title}</h2>
+                     </div>
+                  </div>
+                )})}
         </div>
-        <div className={styles.info}>
-            <h2>{product.title}</h2>
-        </div>
-      </div>
-        )
-      })}
     </div>
 
-    <div className={styles.products}>
-      {data.map((product)=>{
-        return (
-          <div className={styles.card} key={product.id}>
-        <div className={styles.media}>
-          <img src={product.img}/>
+    <div className={styles.destaque}>
+        <h2>Em Promoção</h2>
+        <div className={styles.products}>
+           {data.map((product)=>{
+                return (
+                  <div className={styles.card} key={product.id}>
+                     <div className={styles.media}>
+                     <img src={product.img}/>
+                        </div>
+                        <div className={styles.info}>
+                        <h2>{product.title}</h2>
+                     </div>
+                  </div>
+                )})}
         </div>
-        <div className={styles.info}>
-            <h2>{product.title}</h2>
-        </div>
-      </div>
-        )
-      })}
-    </div>
-
-    <div className={styles.products}>
-      {data.map((product)=>{
-        return (
-          <div className={styles.card} key={product.id}>
-        <div className={styles.media}>
-          <img src={product.img}/>
-        </div>
-        <div className={styles.info}>
-            <h2>{product.title}</h2>
-        </div>
-      </div>
-        )
-      })}
     </div>
     
    </div>
